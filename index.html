@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="keywords" content="movie , search, imdb , rating" />
+	<meta name="description" content="Movie Search">
+	<meta name="author" content="Subhro Chatterjee">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+	<title>Movies</title>
+	<!-- favicon  -->
+	<link rel="icon" href="assets/images/logo.jpg" type="image/jpg" sizes="16x16">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<!-- for icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<!-- for fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-sm">
+			<a class="navbar-brand" href="#">Logo
+				<img src="" alt="">
+			</a>
+		</nav>
+
+		<!-- movie container -->
+		<div class="container-fluid">
+			<h2>Movie container</h2>
+			<div class="container col-sm-12 d-flex mx-auto">
+					<div class="p-5">
+						<i class="fas fa-film" style="font-size: 50px;"></i>
+					</div>
+					<div class="p-5 form-group col-sm-6">
+						<form>
+							<input type="text" class="form-control userInput" name="userinput" placeholder="Find movies,Tv shows and more...">
+						</form>
+					</div>
+					<div class="p-5">
+						<select id="filter">
+						    <option value="1">Title</option>
+						    <option value="2">Id</option>
+						</select>
+					</div>
+					<div class="p-5">
+						 <button type="button" class="btn btn-outline-dark">Search</button>
+					</div>
+			</div>
+		</div> <!-- Search bar container -->
+			<div class="col-sm-12">
+				<h4 id="catagory" class="text-muted">Catagory</h4>
+			</div>
+			<div class="container col-sm-12 movieContainerHeader" >
+				<div class="row">
+					 <div class="col-sm-2">
+					 	<i class="fas fa-bookmark " style="font-size: 40px;"></i>
+					 </div>
+					 <div class="col-sm-4">
+					 	<h3 id="moviename"></h3>
+					 </div>
+					 <div class="col-sm-3">
+					 	<h4 id="movieyear"></h4>
+					 </div>
+					 <div class="col-sm-3">
+					 	<h5 id="rating"><i class="fas fa-star" style="font-size: 20px;"></i></h5>
+					 </div>
+				</div>	 
+			</div> <!-- movie description head ends -->
+			
+			<!-- Movie card and details -->
+			<div class="container col-sm-12 movieContainerCard">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="card">
+							<img class="card-img-top" alt="Alt img">
+							<div class="card-body">
+								<h4 id="cardmoviename" class="card-title"></h4>
+								<p class="card-text text-muted" id ="year"></p>
+								<p class="card-text text-muted" id ="rated"></p>
+								<p class="card-text text-muted" id ="released"></p>
+								<p class="card-text text-muted" id ="genre"></p>
+								<p class="card-text text-muted" id ="director"></p>	
+							</div>
+						</div>		 
+					</div>
+					<div class="col-sm-7 border description">
+						 <!-- <div id="fullDesc"></div> -->
+						 <h4> See Full Cast and crew </h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		
+		<div>
+			<footer>
+				<div class="col-sm-12 text-center">
+					<p id="footer">Subhro Chatterjee <i class="fas fa-copyright"></i> 
+						2018 Licensed under 
+					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+						<i class="fab fa-creative-commons"></i>
+  					</a>
+				</p>
+					
+				</div>
+			</footer>	
+		</div>
+
+		<!-- scripts -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	  	<script type="text/javascript" src="assets/js/index.js"></script>
+	</body>
+
+</html>
+
