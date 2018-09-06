@@ -21,81 +21,83 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-	<body>
+	<body style="background-color: #004d4d;">
 		<!-- navbar -->
 		<nav class="navbar navbar-expand-sm">
-			<a class="navbar-brand" href="#">Logo
-				<img src="" alt="">
+			<a class="navbar-brand" href="#">
+				<img src="assets/images/logo.jpg" class="rounded-circle" alt="" height="30" width="30">
 			</a>
 		</nav>
 
 		<!-- movie container -->
-		<div class="container-fluid">
-			<h2>Movie container</h2>
-			<div class="container col-sm-12 d-flex mx-auto">
-					<div class="p-5">
-						<i class="fas fa-film" style="font-size: 50px;"></i>
+		<div class="container-fluid" >
+			<div class="container col-sm-12 mx-auto">
+				<div class="row ">
+					<div class="col-sm-1">
+						<i class="fas fa-film"></i>
 					</div>
-					<div class="p-5 form-group col-sm-6">
+					<div class="form-group col-sm-7">
 						<form>
 							<input type="text" class="form-control userInput" name="userinput" placeholder="Find movies,Tv shows and more...">
 						</form>
 					</div>
-					<div class="p-5">
+					<div class="col-sm-1">
 						<select id="filter">
 						    <option value="1">Title</option>
 						    <option value="2">Id</option>
 						</select>
 					</div>
-					<div class="p-5">
-						 <button type="button" class="btn btn-outline-dark">Search</button>
+					<div class="col-sm-2 btn1">
+						 <button type="button" class="btn btn-secondary ">Search</button>
 					</div>
+				</div>	
 			</div>
 		</div> <!-- Search bar container -->
 			<div class="col-sm-12">
-				<h4 id="catagory" class="text-muted">Catagory</h4>
+				<h4 id="catagory">Catagory</h4>
 			</div>
-			<div class="container col-sm-12 movieContainerHeader" >
-				<div class="row">
-					 <div class="col-sm-2">
-					 	<i class="fas fa-bookmark " style="font-size: 40px;"></i>
-					 </div>
-					 <div class="col-sm-4">
-					 	<h3 id="moviename"></h3>
-					 </div>
-					 <div class="col-sm-3">
-					 	<h4 id="movieyear"></h4>
-					 </div>
-					 <div class="col-sm-3">
-					 	<h5 id="rating"><i class="fas fa-star" style="font-size: 20px;"></i></h5>
-					 </div>
-				</div>	 
-			</div> <!-- movie description head ends -->
+			<div>
+				<div class="container col-sm-12 movieContainerHeader" >
+					<div class="row">
+						 <div class="col-sm-1 text-right">
+						 	<i class="fas fa-bookmark "></i>
+						 </div>
+						 <div class="col-sm-4 text-center">
+						 	<h3 id="moviename"></h3>
+						 </div>
+						 <div class="col-sm-2 text-left text-muted">
+						 	<h4 id="movieyear"></h4>
+						 </div>
+						 <div class="col-sm-2">
+						 	<i class="fas fa-star"></i><p id="rating"></p>
+						 </div>
+					</div>	 
+				</div> <!-- movie description head ends -->
 			
-			<!-- Movie card and details -->
-			<div class="container col-sm-12 movieContainerCard">
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="card">
-							<img class="card-img-top" alt="Alt img">
-							<div class="card-body">
-								<h4 id="cardmoviename" class="card-title"></h4>
-								<p class="card-text text-muted" id ="year"></p>
-								<p class="card-text text-muted" id ="rated"></p>
-								<p class="card-text text-muted" id ="released"></p>
-								<p class="card-text text-muted" id ="genre"></p>
-								<p class="card-text text-muted" id ="director"></p>	
-							</div>
-						</div>		 
-					</div>
-					<div class="col-sm-7 border description">
-						 <!-- <div id="fullDesc"></div> -->
-						 <h4> See Full Cast and crew </h4>
+				<!-- Movie card and details -->
+				<div class="container col-sm-12 movieContainerCard">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="card">
+								<img class="card-img-top" alt="Alt img">
+								<div class="card-body">
+									<h4 id="cardmoviename" class="card-title"></h4>
+									<p class="card-text text-muted" id ="year"></p>
+									<p class="card-text text-muted" id ="rated"></p>
+									<p class="card-text text-muted" id ="released"></p>
+									<p class="card-text text-muted" id ="genre"></p>
+									<p class="card-text text-muted" id ="director"></p>	
+								</div>
+							</div>		 
+						</div>
+						<div class="col-sm-7 border description">
+							 <!-- <div id="fullDesc"></div> -->
+							 <div id="fullDesc"></div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-
+			</div>	
+			
 		<!-- footer -->
 		
 		<div>

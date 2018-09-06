@@ -34,7 +34,7 @@ let getMovieObject = () => {
 		type:'GET',
 		dataType:'json',
 		async:true,
-		url:'http://www.omdbapi.com/?'+token+'&apikey=51664879&', 
+		url:'http://www.omdbapi.com/?'+token+'&apikey=cf262e0a&', 
 		success:(response) => {
 			console.log(response)
 			console.log(response.Response);
@@ -69,8 +69,8 @@ let getMovieObject = () => {
 				$('#director').text(`Director : ${response.Director}`);	
 
 				let desc =  
-					`<div>
-						<h4>See Full Cast and crew </h4>
+					`<div id="fullDesc">
+						<h4 id="fullDesc">See Full Cast and crew </h4>
 						<p id="fullDesc"><strong>Directed By : </strong>${response.Director}</p>
 						<p id="fullDesc"><strong>Actors : </strong>${response.Actors}</p>
 						<p id="fullDesc"><strong>Awards : </strong>${response.Awards}</p>

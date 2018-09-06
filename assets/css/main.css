@@ -1,1 +1,233 @@
-ss
+.fa-film{
+	font-size: 50px;
+	color: #1a1a1a;
+}
+.fa-bookmark{
+	font-size: 40px;
+}
+.fa-star{
+	font-size: 20px;
+	color: #1a1a1a;
+}
+.fa-creative-commons{
+	color: #ffffff;
+}
+.movieContainerCard{
+	max-width: 90%;
+}
+.description{
+	max-width: 88%;
+	margin-left:auto; 
+	margin-right: auto;
+}
+#footer{
+	color:#ffffff;
+}
+#catagory,#moviename,#movieyear,#rating,#fullDesc{
+	color: #ffffff;	
+}
+
+
+
+@media screen and (max-width: 340px){
+	.form-group .form-control{
+		max-width: 50%;
+	}	
+	.fa-film{
+		font-size: 1.2em;
+	}
+	#filter{
+		font-size: 0.7em;
+	} 
+	.btn{
+		font-size: 0.7em;
+	}
+	.btn1{
+		padding-top: 2vh;
+		margin-left: auto;
+	}
+	#catagory{
+		padding-top: 2vh;
+		font-size: 1em;
+	}
+	.movieContainerHeader{
+		max-width:50%;
+	}
+	.fa-bookmark,#moviename,#movieyear,.fa-star,#rating{
+		font-size: 1em;
+	}
+	.fa-bookmark{
+		margin-right: 50%; 
+	}
+	.fa-star{
+		margin-left: 40%;
+	}
+	.movieContainerCard{
+		max-width: 70%;
+
+	}
+	.card-body .card-title{
+		font-size:1em;	
+	}
+	.description{
+		max-width: 85%;
+		margin-left:auto; 
+		margin-right: auto;
+	}
+	#fullDesc{
+		font-size: 0.9em;
+
+	}
+	#footer{
+		font-size: 0.7em;
+	}
+}
+@media screen and (min-width: 340px) and (max-width: 575px){
+	.form-group .form-control{
+		max-width: 50%;
+	}	
+	.fa-film{
+		font-size: 1.2em;
+	}
+	#filter{
+		font-size: 0.7em;
+	} 
+	.btn{
+		font-size: 0.7em;
+	}
+	.btn1{
+		padding-top: 2vh;
+		margin-left: auto;
+	}
+	#catagory{
+		padding-top: 2vh;
+		font-size: 1em;
+	}
+	.movieContainerHeader{
+		max-width:60%;
+	}
+	.fa-bookmark,#moviename,#movieyear,.fa-star,#rating{
+		font-size: 1em;
+	}
+	.fa-bookmark{
+		margin-right: 50%; 
+	}
+	.fa-star{
+		margin-left: 45%;
+	}
+	#movieyear,#rating{
+		margin-left: 30%;
+	}
+	.movieContainerCard{
+		max-width: 50%;
+
+	}
+	.card-body .card-title{
+		font-size:1em;	
+	}
+	.description{
+		max-width: 88%;
+		margin-left:auto; 
+		margin-right: auto;
+	}
+	#fullDesc{
+		font-size: 0.9em;
+
+	}
+	#footer{
+		font-size: 0.9em;
+	}	
+}
+@media screen and (min-width: 575px) and (max-width: 767px){
+	.form-group .form-control{
+		max-width: 90%;
+	}	
+	.fa-film{
+		font-size: 2em;
+	}
+	#filter{
+		font-size: 1em;
+	} 
+	.btn{
+		font-size: 0.9em;
+		padding-bottom: 10px;
+	}
+	.btn1{
+		margin-left: auto;
+	}
+	#catagory{
+		padding-top: 2vh;
+		font-size: 1.2em;
+	}
+	.fa-bookmark,#moviename,#movieyear,.fa-star,#rating{
+		font-size: 1em;
+	}
+	.movieContainerCard{
+		max-width: 90%;
+	}
+	.card-body .card-title{
+		font-size:1em;	
+	}
+	.description{
+		max-width: 88%;
+		margin-left:auto; 
+		margin-right: auto;
+	}
+	#fullDesc{
+		font-size: 0.9em;
+
+	}
+	#footer{
+		font-size: 0.9em;
+	}	
+}
+@media screen and (min-width: 767px) and (max-width: 1024px){
+	.form-group .form-control{
+		max-width: 90%;
+	}	
+	.fa-film{
+		font-size: 2em;
+	}
+	#filter{
+		font-size: 1em;
+	} 
+	.btn{
+		font-size: 0.9em;
+		padding-bottom: 10px;
+	}
+	.btn1{
+		margin-left: auto;
+	}
+	#catagory{
+		padding-top: 2vh;
+		font-size: 1.2em;
+	}
+	.fa-bookmark,#moviename,#movieyear,.fa-star,#rating{
+		font-size: 1em;
+	}
+	.movieContainerCard{
+		max-width: 90%;
+	}
+	.card-body .card-title{
+		font-size:1em;	
+	}
+	.description{
+		max-width: 88%;
+		margin-left:auto; 
+		margin-right: auto;
+	}
+	#fullDesc{
+		font-size: 0.9em;
+
+	}
+	#footer{
+		font-size: 0.9em;
+	}	
+}
+
+
+
+
+
+
+

@@ -9,7 +9,7 @@
 ##### How to run :runner:
 
  ```
- Type your favorite movie/tv-show , title/imdbId to get the full details.
+ Type your favorite movie/tv-show , details - title/imdbId to get the full details.
  ```
 ### Author
 :smiley: | Subhro Chatterjee | :copyright: | 2018    
