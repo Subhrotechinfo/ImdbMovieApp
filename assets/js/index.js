@@ -1,13 +1,14 @@
 let token,id;
 let filter,userInput;
-$(document).ready(function(){
+$(document).ready(() => {
+
 	$('.userInput').focus();
 	$('.movieContainerHeader').hide();
 	$('.movieContainerCard').hide();
 	$('#catagory').hide();
 	$("#modalId").css("display","none");
 	
-	$('.btn').click(function(){
+	$('.btn').click(() => {
 		 
 		filter = $( "#filter option:selected").text();
 		userInput= $('.userInput').val();
@@ -38,6 +39,7 @@ $(document).ready(function(){
 let getMovieObject = () => {
 
 	$.ajax({
+		crossOrigin: true,
 		type:'GET',
 		dataType:'json',
 		async:true,
@@ -54,6 +56,7 @@ let getMovieObject = () => {
 			 		$("#close").click(() => {
 		    			$("#modalId").css("display","none");
 					});
+					$('.userInput').val("");
 
 				}else if(response.Error === "Incorrect IMDb ID."){
 					
@@ -63,6 +66,7 @@ let getMovieObject = () => {
 			 		$("#close").click(() => {
 		    			$("#modalId").css("display","none");
 					});
+					$('.userInput').val("");
 				}
 			}else{
 
@@ -112,6 +116,7 @@ let getMovieObject = () => {
 				$('.description').html(desc);
 
 			}
+			$('.userInput').val("");
 		},
 		error: (err) => {
 			console.log(err.responseJSON.error.message);
