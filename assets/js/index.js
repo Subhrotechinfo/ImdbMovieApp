@@ -43,7 +43,7 @@ let getMovieObject = () => {
 		type:'GET',
 		dataType:'json',
 		async:true,
-		url:'http://www.omdbapi.com/?'+token+'&apikey=cf262e0a&', 
+		url:'https://www.omdbapi.com/?'+token+'&apikey=cf262e0a&', 
 		success:(response) => {
 			console.log(response)
 			console.log(response.Response);
