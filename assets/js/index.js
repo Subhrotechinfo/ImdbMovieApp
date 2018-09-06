@@ -1,10 +1,12 @@
 let token,id;
 let filter,userInput;
 $(document).ready(function(){
-
+	$('.userInput').focus();
 	$('.movieContainerHeader').hide();
 	$('.movieContainerCard').hide();
 	$('#catagory').hide();
+	$("#modalId").css("display","none");
+	
 	$('.btn').click(function(){
 		 
 		filter = $( "#filter option:selected").text();
@@ -12,7 +14,12 @@ $(document).ready(function(){
 		//console.log(userInput+"    "+filter);
 	 	
 	 	if(userInput == ""){
-	 		alert("please enter the details");
+	 		//alert("please enter the details");
+	 		$("#modelMessage").text("Please enter movie,tv-show name/imdbID");
+	 		$("#modalId").css("display","block");
+	 		$("#close").click(() => {
+    			$("#modalId").css("display","none");
+			});
 	 	}else{
 	 		if(filter == "Title"){
 	 			token="t="+userInput;
@@ -41,12 +48,30 @@ let getMovieObject = () => {
 
 			if(response.Response === "False"){
 				if(response.Error === "Movie not found!"){
-					alert('incorrect title provided.')
+					$("#modelMessage").text("no record found with the title provided.");
+
+					$("#modalId").css("display","block");
+			 		$("#close").click(() => {
+		    			$("#modalId").css("display","none");
+					});
+
 				}else if(response.Error === "Incorrect IMDb ID."){
-					alert('incorrect id provided.')
+					
+					$("#modelMessage").text("no record found with the IMDBID provided.");
+
+					$("#modalId").css("display","block");
+			 		$("#close").click(() => {
+		    			$("#modalId").css("display","none");
+					});
 				}
 			}else{
-				console.log('movie');
+
+				$("#modelMessage").text(response.Title);
+				$("#modalId").css("display","block");
+				$("#close").click(() => {
+		    			$("#modalId").css("display","none");
+				});
+
 				$('#catagory').show().html("Catagory : "+response.Type);
 				$('.movieContainerHeader').show();
 				$('#moviename').text(response.Title);
@@ -56,7 +81,7 @@ let getMovieObject = () => {
 				$('.movieContainerCard').show();
 					
 					if(response.Poster === "N/A"){
-						$('.card-img-top').attr("src","assets/images/logo.jpg");
+						$('.card-img-top').attr("src","assets/images/Poster.jpg");
 					}else{
 						$('.card-img-top').attr("src",response.Poster);
 					}
