@@ -106,7 +106,6 @@ let getMovieObject = () => {
 						<p id="fullDesc"><strong>Country : </strong>${response.Country}</p>
 						<p id="fullDesc"><strong>Language : </strong>${response.Language}</p>
 						<p id="fullDesc"><strong>Runtime : </strong>${response.Runtime}</p>
-						<p id="fullDesc"><strong>Website : </strong>${response.Website}</p>
 						<p id="fullDesc"><strong>Writer : </strong>${response.Writer}</p>
 						<p id="fullDesc"><strong>IMDbID : </strong>${response.imdbID}</p>
 						<p id="fullDesc"><strong>IMDbRating : </strong>${response.imdbRating}</p>
